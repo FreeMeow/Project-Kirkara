@@ -19,11 +19,15 @@ public class ControlledMovement : MonoBehaviour
     {
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
+        Vector2 vec = new Vector2(x, y);
 
-
-        //transform.Translate(new Vector3(x, y, 0) * moveSpeed * Time.deltaTime);
-        //rb.AddForce(new Vector2(x, y) * moveSpeed * Time.deltaTime,ForceMode2D.Impulse);
-        rb.MovePosition((Vector2)transform.position + new Vector2(x, y) * Time.deltaTime * moveSpeed);
+        if (vec != Vector2.zero)
+        {
+            var angle = Mathf.Atan2(y,x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        }
+            
+        rb.MovePosition((Vector2)transform.position + vec * Time.deltaTime * moveSpeed);
         
     }
 }
