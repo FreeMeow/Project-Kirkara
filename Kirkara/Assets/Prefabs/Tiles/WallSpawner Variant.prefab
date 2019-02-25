@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 5252898369708681179, guid: bf01fe13f0b768341af6017c912d948e,
         type: 3}
       propertyPath: m_Name
-      value: WallSpawner
+      value: WallSpawner Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2471658588975664694, guid: bf01fe13f0b768341af6017c912d948e,
         type: 3}
@@ -88,7 +88,7 @@ PrefabInstance:
         type: 3}
       propertyPath: spawnableObjects.Array.data[2]
       value: 
-      objectReference: {fileID: 5022013384119997026, guid: aaa01d406384dbb4a8d6102d1388d0f3,
+      objectReference: {fileID: 5187105145164001985, guid: aaa01d406384dbb4a8d6102d1388d0f3,
         type: 3}
     - target: {fileID: 5852251654614671901, guid: bf01fe13f0b768341af6017c912d948e,
         type: 3}
