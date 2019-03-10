@@ -24,7 +24,6 @@ public class Follow : MonoBehaviour
     {
         float angle  = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg;
         rb.MoveRotation(Mathf.LerpAngle(rb.rotation, angle, 60 * Time.deltaTime));
-        //transform.right = target.position - transform.position;
         StartCoroutine(MyCoroutine(target));
         
     }
@@ -35,9 +34,7 @@ public class Follow : MonoBehaviour
         {
 
             rb.MovePosition(Vector2.MoveTowards((Vector2)transform.position, (Vector2)target.position, speed * Time.deltaTime));
-            //rb.MovePosition(Vector2.Lerp(transform.position, target.position, speed * Time.deltaTime));
-
-            
+             
             yield return null;
         }
         yield return new WaitForFixedUpdate();
