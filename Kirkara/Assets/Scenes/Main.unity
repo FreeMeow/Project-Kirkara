@@ -152,7 +152,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 429320758}
+  - {fileID: 1549423449}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -225,12 +225,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70470f37175e7b64d8bb27164955b28c, type: 3}
---- !u!4 &429320758 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8036596697001589897, guid: 70470f37175e7b64d8bb27164955b28c,
-    type: 3}
-  m_PrefabInstance: {fileID: 429320757}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &448624513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -308,8 +302,19 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 0.54814196
       objectReference: {fileID: 0}
+    - target: {fileID: 7929160688526619494, guid: a9b39ab94cc04724b968017c6f034e1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b39ab94cc04724b968017c6f034e1e, type: 3}
+--- !u!4 &1549423449 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3249281461392202259, guid: 70470f37175e7b64d8bb27164955b28c,
+    type: 3}
+  m_PrefabInstance: {fileID: 429320757}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1784612316
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +326,7 @@ GameObject:
   - component: {fileID: 1784612319}
   - component: {fileID: 1784612318}
   - component: {fileID: 1784612317}
+  - component: {fileID: 1784612320}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -392,3 +398,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1784612320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784612316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cafdd3af8b779044899e9b91f2e24995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deadZone: 0.3
+  cameraSpeed: 3
